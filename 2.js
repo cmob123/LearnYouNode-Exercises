@@ -1,8 +1,8 @@
-// print sum of arguments passed (learnyounode workshopper #2)
+// print the sum of arguments passed (learnyounode workshopper #2)
 
-var index, sum = 0;
-var args = process.argv
-for(index=2; index < args.length; index++){
-	sum += parseInt(args[index])
+const args = process.argv;
+let index, sum = 0;
+for(index=2; index < args.length; index += 1) {
+	sum += parseInt(args[index], 10);
 }
-console.log(sum)
+console.log(sum);
